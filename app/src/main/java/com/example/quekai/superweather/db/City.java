@@ -1,5 +1,8 @@
 package com.example.quekai.superweather.db;
 
+import org.litepal.crud.DataSupport;
+
+
 /**
  * Created by quekai on 2018/10/24.
  */
@@ -8,7 +11,7 @@ public class City extends DataSupport {
     private int id;
     private String cityName;
     private int cityCode;
-    private int provinceCode;
+    private int provinceId;
 
     public int getId(){
         return id;
@@ -22,23 +25,23 @@ public class City extends DataSupport {
         return cityCode;
     }
 
-    public int getProvinceCode(){
-        return provinceCode;
+    public int getProvinceId(){
+        return provinceId;
     }
 
-    void setId(int id){
+    public void setId(int id){
         this.id = id;
     }
 
-    void setCityName(String cityName){
+    public void setCityName(String cityName){
         this.cityName = cityName;
     }
 
-    void setCityCode(int cityCode){
+    public void setCityCode(int cityCode){
         this.cityCode = cityCode;
     }
 
-    void  setProvinceCode(int provinceCode){
-        this.provinceCode  = provinceCode;
+    public void  setProvinceId(int provinceId){
+        this.provinceId  = provinceId;
     }
 }

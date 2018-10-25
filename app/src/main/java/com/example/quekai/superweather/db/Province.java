@@ -1,5 +1,8 @@
 package com.example.quekai.superweather.db;
 
+import org.litepal.crud.DataSupport;
+
+
 /**
  * Created by quekai on 2018/10/24.
  */
