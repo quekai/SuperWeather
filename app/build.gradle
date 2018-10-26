@@ -9,13 +9,24 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "versionCode"
     }
+    productFlavors{
+        qihoo{
+            applicationId "com.superweather.android.qihoo"
+        }
+        baidu{
+            applicationId "com.superweather.android.baidu"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 repositories {
